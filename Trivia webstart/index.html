@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia - Gana con tu Conocimiento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Pantalla de Bienvenida -->
+        <div id="welcomeScreen" class="welcome-screen">
+            <h1>Trivia Challenge</h1>
+            <p class="welcome-message">
+                ¡Gana con tu conocimiento!<br>
+                Responde 10 preguntas de diferentes niveles de dificultad y gana con todo lo que sabes.💲💵
+            </p>
+            <button id="startBtn" class="start-btn">Comenzar Trivia</button>
+            <p> <img src="https://github.com/Alan-Casadiegos/imagen-logo-sapo-/blob/main/Dise%C3%B1o%20sin%20t%C3%ADtulo.png?raw=true" alt="" id="logo"></p>
+        </div>
+
+        <!-- Pantalla de Quiz -->
+        <div id="quizScreen" class="quiz-screen">
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            
+            <div class="question-info">
+                <span id="questionNumber">Pregunta 1/10</span>
+            </div>
+            
+            <div id="question" class="question"></div>
+            
+            <div id="options" class="options"></div>
+            
+            <button id="nextBtn" class="next-btn">Siguiente</button>
+        </div>
+
+        <!-- Pantalla de Resultados -->
+        <div id="resultsScreen" class="results-screen">
+            <h1>🎉 ¡Trivia Completada!</h1>
+            <div class="score-display">
+                <div class="score-circle">
+                    <span id="finalScore">0</span>
+                    <span class="score-text">/ 10</span>
+                </div>
+            </div>
+            <div id="scoreMessage" class="score-message"></div>
+            <div class="score-breakdown">
+                <div class="breakdown-item">
+                    <span class="breakdown-label">Fáciles:</span>
+                    <span id="easyScore">0/3</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-label">Regulares:</span>
+                    <span id="mediumScore">0/3</span>
+                </div>
+                <div class="breakdown-item">
+                    <span class="breakdown-label">Difíciles:</span>
+                    <span id="hardScore">0/4</span>
+                </div>
+            </div>
+            <button id="restartBtn" class="restart-btn">Jugar de Nuevo</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="frontend.js"></script>
+</body>
+</html>
